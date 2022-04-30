@@ -1,0 +1,122 @@
+<%- include ("../partials/head") %>
+
+<!-- CUSTOM CARDS -->
+<div class="m-content">
+    <div class="row">
+        <div class="col-md-12 section1 " style="display:non;">
+<div class="m-portlet">
+
+<div class="m-portlet__head">
+<div class="m-portlet__head-caption">
+<div class="m-portlet__head-title">
+    <span class="m-portlet__head-icon">
+        <i class="la la-money"></i>
+    </span>
+    <h3 class="m-portlet__head-text text-capitalize font-weight-bold">
+        Deposit Plan: cryptocurrency Basic Plan Deposit					</h3>
+</div>
+</div>
+</div>
+<form class="m-form m-form--label-align-right m-form--fit" id="investmentForm">
+<input type="hidden" name="membershipId" value="RF55275">
+<input type="hidden" name="fullname" value="Godson Nwankwo">
+<input type="hidden" name="email" value="nwankwodika@gmail.com">
+<input type="hidden" id="investmentPlan" name="investmentPlan" value="Basic">
+<input type="hidden" id="investmentType" name="investmentType" value="cryptocurrency">
+<div class="m-portlet__body">
+<div class="tab-content">
+    <div class="tab-pane  active" id="m_builder_page">
+        <div class="form-group m-form__group pb-0">
+            <label class="col-form-label">Minimum Investments</label>
+            <div class="">
+                <div class="input-group m-input-group m-input-group--pill pb-0">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                    </div>
+                    <input type="number" id="min_investment" name="min_investment" class="form-control" value="300" readonly="">
+                </div>
+            </div>
+        </div>
+        <div class="form-group m-form__group pb-0">
+            <label class="col-form-label">Maximum Investments</label>
+            <div class="">
+                <div class="input-group m-input-group m-input-group--pill pb-0">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                    </div>
+                    <input type="text" id="commision" name="max_investment" class="form-control" value="2000" readonly="">
+                </div>
+            </div>
+        </div>
+        <div class="form-group m-form__group pb-0">
+            <label class="col-form-label">Commission on Investment</label>
+            <div class="">
+                <div class="input-group m-input-group m-input-group--pill pb-0">
+                    <input type="text" id="commision" name="commision" class="form-control" value="5%" readonly="">
+                </div>
+            </div>
+        </div>
+        <div class="form-group m-form__group pb-0">
+            <label class="col-form-label">Enter Amount to Invest</label>
+            <div class="">
+                <div class="input-group m-input-group m-input-group--pill pb-0">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">$</span>
+                    </div>
+                    <input type="number" id="amount" name="amount" class="form-control" required="">
+                </div>
+                <small class="text-danger error" id="amountError"></small>
+            </div>
+        </div>
+        <div class="form-group m-form__group pb-0">
+            <label class="col-form-label">Pay Through </label>
+            <div class="">
+                <select id="payoutOption" name="payoutOption" class="form-control">
+                    <option value="Maual Deposit">Manual Deposit through other wallet</option>
+                    <option value="Daily Payout">BFS Wallet</option>
+                </select>
+            </div>
+            <small class="text-danger error" id="payoutOptionError"></small>
+        </div>
+        <input type="hidden" name="email" class="form-control" value="nwankwodika@gmail.com" readonly="">
+    </div>
+</div>
+</div>
+<div class="m-portlet__foot m-portlet__foot--fit">
+<div class="m-form__actions">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <button id="submitButton" type="submit" name="builder_submit" data-demo="demo5" class="btn btn-primary m-btn m-btn--icon m-btn--wide m-btn--air m-btn--custom m-loade m-loader--right">
+                <span>
+                    <span>Invest</span>
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+</form>
+<!--end::Form-->
+</div>
+</div>
+<div class="section2 col-md-6 offset-md-3" style="display:none;">
+<!--begin::Portlet-->
+<div class="m-portlet m-portlet--tabs p-5 text-center" id="form_div">
+<div class="py-3"><i class="fas fa-check-double fa-3x text-success"></i></div>
+<!-- <div class="py-3"><i class="far fa-check-square fa-3x text-success"></i></div> -->
+
+<h5 class="font-weight-bold">Your Investment request was delivered successfully. Please make your payment to the bitcoin wallet address below.</h5>
+<div class="input-group my-5">
+<input type="text" class="form-control text-center wallet_address_input" value="14ZdYVGczsuaVkJTDLg2YWJievKrDWbhdY" id="m_clipboard_1" readonly="">
+<div class="input-group-append">
+<a href="https://www.bluegatefinancialservices.com/account/new-investment.php#" class="btn btn-secondary" data-clipboard="true" data-clipboard-target="#m_clipboard_1"><i class="la la-copy mr-2"></i>Copy</a>
+</div>
+</div>
+<a class="btn btn-primary mt-3" href="https://www.bluegatefinancialservices.com/account/index.php">Return to Home</a>
+</div>
+</div>					</div>
+</div>
+</div>
+</div>
+
+<%- include ("../partials/foot") %>

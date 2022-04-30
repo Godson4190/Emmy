@@ -1,0 +1,94 @@
+<%- include ("./partials/header") %>
+
+
+<!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark bg-fixed text-center text-light" style="background-image: url(world.svg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h1>User Register</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="active">Register</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Register 
+    ============================================= -->
+    <div class="login-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <form action="/register" method="POST" id="login_form" class="white-popup-block">
+                        <div class="col-md-12 login-custo border-none">
+                            <h3 class="font-weight-600">Register</h3>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input name="fullName" class="form-control" placeholder="Full name*" type="text" required="">
+                                        <small id="email_error" class="form-text error" style="color:red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input name="username" class="form-control" placeholder="Username*" type="text" required="">
+                                        <small id="email_error" class="form-text error" style="color:red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input name="email" class="form-control" placeholder="Email*" type="text" required="">
+                                        <small id="email_error" class="form-text error" style="color:red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input name="password" class="form-control" placeholder="Password*" type="password" required="">
+                                        <small id="password_error" class="form-text error" style="color:red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <input name="retypePassword" class="form-control" placeholder="RetypePassword*" type="text" required="">
+                                        <small id="email_error" class="form-text error" style="color:red;"></small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <label for="login-remember"><input type="checkbox" id="login-remember">Remember
+                                        Me</label>
+                                    <a title="Lost Password" href="/forgot" class="lost-pass-link"><small>Lost your
+                                            password?</small></a>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <button id="submit_button" class="w-100" type="submit" value="register">
+                                        Register
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="link-bottom"><small>Already a member? <a href="/login" class="text-primary">Login</a></small> </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Login Area -->
+
+<%- include ("./partials/footer") %>
